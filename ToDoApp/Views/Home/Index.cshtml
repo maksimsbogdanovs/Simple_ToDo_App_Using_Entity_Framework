@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+    .buttons {
+            height:200px;
+            width:900px;
+            display: flex;
+            justify-content:space-evenly;
+            align-items:center;
+            margin-top: 50px;
+
+        }
+</style>
+<div class="text-center">
+    <h1 class="display-4">Welcome to your new To Do App</h1>
+</div>
+<div class="buttons">
+<button class="btn-primary" onclick="location.href='@Url.Action("Index", "ToDoLists")';return false;">View all items in a list</button>
+<button class="btn-primary" onclick="location.href='@Url.Action("Create", "ToDoLists")';return false;">Create new To Do item</button>
+</div>
+
